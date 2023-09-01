@@ -41,3 +41,16 @@ void dfs_articulation(int node, int parent)
         is_articulation[node] = true;
     }
 }//call for() dfs(i,-1)
+int main(){
+    for (int i = 0; i < n; ++i) {
+        if (!visited[i]) {
+            dfs_articulation(i, -1);
+        }
+    }
+    cout << "Articulation Points: ";
+    for (int i = 0; i < n; ++i) {
+        if (is_articulation[i]) {
+            cout << i << " ";
+        }
+    }cout << endl;
+}

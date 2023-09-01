@@ -46,3 +46,18 @@ struct Bipartite_matching{
         x_cnt = x;
     }
 };
+int main(){
+    int n,m;
+    Bipartite_matching bm;
+    for(int i = 0;i<m;i++){
+        int a , b;cin >>a>>b;
+        bm.add_edge(a,b);
+    }
+    bm.init(n);
+    cout << bm.bipartite_matching()<<endl;
+    auto match = bm.get_match();
+    for(auto t: match){  
+        cout << t[0]<<" "<<t[1]<<endl;
+    }
+
+}

@@ -32,13 +32,8 @@ void find_path(int s, int t){		// 印出最短路徑
 	find_path(mid[s][t], t);		// 後半段最短路徑
 }
 int main(){
-    graph = {
-        {{4,1},{5,3}},
-        {{3,3}},
-        {{}},
-        {{4,0},{2,1},{7,2}}
-    };
-    floyd_warshall(4);
+    int n;
+    floyd_warshall(n);
     for(int i =0;i<4;i++){
         for(int j = 0 ; j <4;j++)
             cout << dis[i][j]<<" ";

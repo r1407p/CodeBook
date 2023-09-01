@@ -68,3 +68,16 @@ int main(){
         cout <<LCA(a,b)<<endl;;
     }
 }
+int main(){
+    n = 9;
+    logn = ceil(log2(n));
+    ancestor.resize(n,vector<int>(logn));
+    tin.resize(n);
+    tout.resize(n);
+    rooted_tree(0);
+    while(true){
+        int a,b;
+        cin >>a>>b;
+        cout <<LCA(a,b)<<endl;;
+    }
+}

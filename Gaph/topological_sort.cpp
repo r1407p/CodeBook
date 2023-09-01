@@ -15,3 +15,14 @@ void DFS(int i){ //reverse(order) is topo
 	visit[i] = 2;
     order.push_back(i);
 }//for() if(!vis[i])DFS(i)
+int main() {
+	for (int i=0; i<n; ++i){
+		if (!visit[i])
+			DFS(i);
+    }
+	if (cycle)
+		cout << "圖上有環";
+	else
+		for (int i=n-1; i>=0; --i)
+			cout << order[i];
+}

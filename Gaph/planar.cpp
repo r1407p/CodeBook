@@ -48,3 +48,16 @@ bool isPlanar(const Graph& graph) {
     }
     return true; // The graph is planar
 }
+int main() {
+    int vertices, edges;
+    Graph graph(vertices);
+    for (int i = 0; i < edges; ++i) {
+        int u, v;cin >> u >> v;
+        graph.addEdge(u, v);
+    }
+    if (isPlanar(graph)) {
+        cout << "The graph is planar." << endl;
+    } else {
+        cout << "The graph is non-planar." << endl;
+    }
+}

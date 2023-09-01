@@ -70,3 +70,16 @@ private:
         return true;
     }
 };
+int main() {
+    int n, m;// Number of variables and clauses
+    TwoSAT twoSat(n);
+    for (int i = 0; i < m; ++i) {
+        int a, b;
+        twoSat.addClause(a, b);
+    }
+    if (twoSat.solve()) {
+        cout << "Satisfiable" << endl;
+    } else {
+        cout << "Unsatisfiable" << endl;
+    }
+}

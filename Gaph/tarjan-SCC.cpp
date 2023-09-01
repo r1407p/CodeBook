@@ -29,4 +29,15 @@ void dfs(int x,int parent){
             contract[j] =x;
         }while(j!=x);
     }
-}//for() if(!vis[i])dfs(i,i);
+}
+int main(){
+    for(int i =0;i<n;i++){
+        if (!visit[i])
+			dfs(i, i);
+    }
+    for(auto t: block){
+        for(auto x:t){
+            cout << x <<" ";
+        }cout <<endl;
+    }
+}

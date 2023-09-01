@@ -29,7 +29,7 @@ void dfs2(int x,int c){
     }  
 }
 int main(){
-   graph = {};
+    graph = {};
     reverse_graph = {};
      
     for(int i =0;i<n;i++){

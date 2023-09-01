@@ -21,3 +21,7 @@ int dfs(int start, int parent){
     return h1;
 }
 // call diameter
+int main(){
+    dfs(0,-1);
+    cout << diameter<<endl;
+}

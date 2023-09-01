@@ -13,3 +13,8 @@ int extgcd(int a,int b,int &x,int &y){//a*x +b*y = 1
     x = temp;
     return r;     //得到a b的最大公因數
 }
+int main(){
+    int a = 55,b = 80;
+    int x,y;//a*x+b*y = 1;
+    int GCD = extgcd(a,b,x,y);
+}

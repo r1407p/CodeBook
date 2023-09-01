@@ -35,3 +35,9 @@ int tree_radius(const vector<vector<int>> &adj_list){
 
     return radius;
 }
+int main() {
+    vector<vector<int>> adj_list;
+    int radius = tree_radius(adj_list);
+    cout << "Tree radius: " << radius << endl;
+    return 0;
+}

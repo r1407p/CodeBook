@@ -29,3 +29,8 @@ void dijsktra(int source){
         }
     }
 }
+int main(){
+    int startpoint;
+    dijsktra(startpoint);
+    //dis and parent
+}

@@ -1,6 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-
 int extgcd(int a,int b,int &x,int &y){//a*x +b*y = 1
     if(b==0){
         x = 1;

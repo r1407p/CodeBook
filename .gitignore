@@ -1,1 +1,4 @@
 *.exe
+codebook.*
+!codebook.tex
+!codebook.pdf

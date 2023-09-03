@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 #define maxn 200005
 vector<int> dis(maxn,-1);
 vector<int> parent(maxn,-1);

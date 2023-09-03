@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 const int n = 16;
 vector<vector<int>> graph;
 int visit[n], low[n],t = 0;

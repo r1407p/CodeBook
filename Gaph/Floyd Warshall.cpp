@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 #define maxn 2005
 vector<vector<int>> dis(maxn,vector<int>(maxn,9999999));
 vector<vector<int>> mid(maxn,vector<int>(maxn,-1));

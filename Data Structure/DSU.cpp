@@ -1,8 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
- 
 class DSU{
-    public:
+public:
     DSU(int n ){
         this->n = n;
         reset();
@@ -11,7 +8,6 @@ class DSU{
     vector<int> boss;
     vector<int> rank;
     vector<int> size;
-
     void reset(){
         this->boss.resize(n);
         this->rank.resize(n,0);

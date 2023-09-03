@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-class TwoSAT {
+class TwoSAT{
 public:
     TwoSAT(int n) : n(n), graph(2 * n), visited(2 * n, false) {}
     void addClause(int a, int b) {// 0-base;

@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 const int n = 9;
 vector<vector<int>> graph;
 vector<int> visit(n, 0);

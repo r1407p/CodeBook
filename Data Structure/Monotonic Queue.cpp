@@ -1,6 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-
 class Monotonic_queue{
 private:
     deque<int> qu;

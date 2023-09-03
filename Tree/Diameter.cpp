@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 vector<vector<int>> graph;
 int diameter = 0;
 int dfs(int start, int parent){

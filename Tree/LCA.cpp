@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 int n, logn,t=0;
 vector<vector<int>> graph; 
 vector<vector<int>> ancestor;

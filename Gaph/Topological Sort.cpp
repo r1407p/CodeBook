@@ -1,6 +1,3 @@
-
-#include <bits/stdc++.h>
-using namespace std;
 vector<vector<int>> graph;
 vector<int> visit(10,0);
 vector<int> order;

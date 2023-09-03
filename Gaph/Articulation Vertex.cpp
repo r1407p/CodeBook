@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 const int n = 9;
 int t = 0;
 vector<int> disc(n, -1);         // Discovery time
@@ -8,8 +6,7 @@ vector<int> parent_array(n, -1); // Parent in DFS tree
 vector<bool> visited(n, false);
 vector<bool> is_articulation(n, false);
 vector<vector<int>> graph;
-void dfs_articulation(int node, int parent)
-{
+void dfs_articulation(int node, int parent){
     visited[node] = true;
     disc[node] = t;
     low[node] = t;

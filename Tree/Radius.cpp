@@ -1,5 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
 // Perform DFS to find the farthest node and its distance from the given node
 pair<int, int> dfs(int node, int distance, vector<bool> &visited, const vector<vector<int>> &adj_list){
     visited[node] = true;

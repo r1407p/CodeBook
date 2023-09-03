@@ -1,6 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-
 vector<int> monotonic_stack(vector<int> nums){
     int n = nums.size();
     vector<int> res(n);

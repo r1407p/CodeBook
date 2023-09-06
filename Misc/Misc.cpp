@@ -1,14 +1,15 @@
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-int randint(int lb, int ub) {
+int randint(int lb, int ub){
 	return uniform_int_distribution<int>(lb, ub)(rng);
 } //static unsigned x = 19; ++(x *= 0xdefaced);
 
 #define SECs ((double)clock() / CLOCKS_PER_SEC)
 
-struct KeyHasher {
+struct KeyHasher{
 	size_t operator()(const Key& k) const {
 		return k.first + k.second * 100000;
-}	};
+	}	
+};
 typedef unordered_map<Key,int,KeyHasher> map_t;
 
 __lg

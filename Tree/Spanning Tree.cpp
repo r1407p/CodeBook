@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 const int V = 100, E = 1000;
 struct Edge {int a, b, c;} e[E];	// edge list
 bool operator<(Edge e1, Edge e2) {return e1.c < e2.c;}
@@ -10,8 +7,7 @@ void init() {for (int i=0; i<V; ++i) p[i] = i;}
 int find(int x) {return x == p[x] ? x : (p[x] = find(p[x]));}
 void merge(int x, int y) {p[find(x)] = find(y);}
 
-void Kruskal()
-{
+void Kruskal(){
 	init();
 	sort(e, e+E);
 	int i, j;

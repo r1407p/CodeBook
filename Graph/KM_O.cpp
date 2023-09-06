@@ -1,4 +1,4 @@
-// 二分圖最大權完美匹配 
+	// 二分圖最大權完美匹配 
 #define MAXN 100
 #define INF INT_MAX
 int g[MAXN][MAXN],lx[MAXN],ly[MAXN],slack_y[MAXN];

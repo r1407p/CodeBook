@@ -1,0 +1,40 @@
+
+\begin{itemize}
+    \item 旋轉矩陣
+\end{itemize}
+\begin{align}
+    \begin{pmatrix}
+        x' \\ y' 
+    \end{pmatrix} = 
+    \begin{pmatrix} 
+        \cos \theta & -\sin\theta \\
+        \sin \theta & \cos \theta 
+    \end{pmatrix} 
+    \begin{pmatrix} 
+        x \\ y 
+    \end{pmatrix}
+\end{align}
+
+
+\begin{itemize}
+    \item 縮放矩陣
+\end{itemize}
+\begin{align}
+    \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} s_x & 0 \\ 0 & s_y \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}
+\end{align}
+
+
+\begin{itemize}
+    \item 反射矩陣
+\end{itemize}
+\begin{align}
+    \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} 2 u_x^2 - 1 & 2 u_x u_y \\ 2 u_x u_y & 2 u_y^2 - 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}
+\end{align}
+
+
+\begin{itemize}
+    \item 正投影
+\end{itemize}
+\begin{align}
+    \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} u_x^2 & u_x u_y \\ u_x u_y & u_y^2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}
+\end{align}

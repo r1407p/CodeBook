@@ -33,6 +33,8 @@ def PrepareFileDict(CurPath):
                 continue
             if root == CurPath:
                 continue
+            if root[2:17]=='Z_Original_code':
+                continue
             DirName = toLatex(root[2:])
             if DirName not in FileDict:
                 FileDict[DirName] = []

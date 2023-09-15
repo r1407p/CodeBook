@@ -15,7 +15,7 @@ void change(vector<cd> &y) {
 			swap(y[i], y[rev[i]]);
 		}
 	}
-}
+} 
 void fft(vector<cd> &y, bool inv) {
 	change(y);
 	for (int h = 2; h <= y.size(); h <<= 1) {

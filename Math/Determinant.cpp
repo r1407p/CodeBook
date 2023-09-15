@@ -1,28 +1,22 @@
-struct matrix{
-  ll M[MAXN][MAXN],n,m;
-  matrix(ll n=0,ll m=0):n(n),m(m){FILL(M,0);}
-  ll det(){
-    vector<vector<double>> tM(n,vector<double>(m));
-    const double eps=1e-9;
-    double x=1;
-    for(int i=0;i<n;++i)
-      for(int j=0;j<m;++j)
-        tM[i][j]=M[i][j];
-    for(int i=0;i<n;++i){
-      int maxline=i;
-      for(int j=i+1;j<n;++j)
-        if(tM[j][i]>tM[maxline][i]) maxline=j;
-      if(maxline!=i)
-        tM[i].swap(tM[maxline]),x*=-1;
-      if(fabs(tM[i][i])<eps) return 0;
-      for(int j=i+1;j<n;++j){
-        double tmp=-tM[j][i]/tM[i][i];
-        for(int k=i;k<m;++k)
-          tM[j][k]+=tmp*tM[i][k];
-      }
+double determinant(vector<vector<double>>& matrix) {
+    int n = matrix.size();
+    if (n == 1) {
+        return matrix[0][0];
     }
-    for(int i=0;i<n;++i)
-      x=x*tM[i][i];
-    return (ll)round(x);
-  }
-};
+    double det = 0;
+    for (int i = 0; i < n; i++) {
+        vector<vector<double>> submatrix(n - 1, vector<double>(n - 1));
+        for (int j = 1; j < n; j++) {
+            for (int k = 0; k < n; k++) {
+                if (k < i) {
+                    submatrix[j - 1][k] = matrix[j][k];
+                } else if (k > i) {
+                    submatrix[j - 1][k - 1] = matrix[j][k];
+                }
+            }
+        }
+        double submatrix_det = determinant(submatrix);// 遞迴計算行列式
+        det += (i % 2 == 0 ? 1 : -1) * matrix[0][i] * submatrix_det;// 累積行列式值
+    }
+    return det;
+}

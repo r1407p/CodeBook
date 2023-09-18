@@ -7,7 +7,6 @@ void __solve(vector<int> u){
     for(int i =0;i<u.size();i++){
         discrete[i] = upper_bound(ALL(u),u[i])-u.begin();
         cout << u[i]<<" "<<discrete[i]<<endl;
-        
     }
 }
 signed main(){
